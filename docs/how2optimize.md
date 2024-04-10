@@ -2,4 +2,4 @@
 
 # How to Cluster
 
-RRP
+SMO
