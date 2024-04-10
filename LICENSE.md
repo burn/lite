@@ -1,4 +1,9 @@
-BSD 2-Clause License
+<a name=top><p>
+[home](/) | [about](/README.md#@top) | [license](/LICENSE.md#top) | [issues](http://github.com/burn/lite/issues)
+
+.
+
+# BSD 2-Clause License
 
 Copyright (c) 2024, burn
 

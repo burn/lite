@@ -5,6 +5,5 @@
 <a href="http://github.com/burn/lite/issues">issues</a>
 <p><img src=/etc/img/lite.png" align=right width=300>
 
-# lite
-semi-supervised multi-objective explanation algorithm
+# How to use Makefiles
 
