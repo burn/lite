@@ -7,3 +7,5 @@
 
 # Python tips and tricks
 
+## True and False are 1 and 0
+
