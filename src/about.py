@@ -1,12 +1,12 @@
 """
-lite.py: semi-supervised multi-objective explaination
+lite.py: semi-supervised multi-objective explanation
 (c)2024, Tim Menzies <timm@ieee.org>, BSD-2 clause license
 
-USAGE:
-  python3 lite.py
+USAGE: python3 lite.py
 
 OPTIONS
-    -f --file     data file                           = data.csv
+    -f --file     data file                           = ../../tests4mop/misc/auto93.csv
+    -h --help     show help                           = False
     -p --p        in distance calcs, use Euclidean    = 2
     -s --seed     random number seed                  = 1234567891                      
     -t --todo     start up action                     = nothing
@@ -17,9 +17,9 @@ OPTIONS
    
   SMO settings:
     -b --best     label the n**'b' items are "best"   = 5
-    -u --upper    on sorting unlabelleds, keep top U% = 8
+    -u --upper    on sorting unlabelled keep top U%   = 8
     -l --label    initially label 'l' examples        = 42
-    -L --Label    label at most another ;L' examples
+    -L --Label    label at most another 'L' examples
 
   SWAY settings:
     -F --Far      seeking distant egs at 'F'*max      = 9
@@ -31,7 +31,5 @@ OPTIONS
     -D --Deeper   next step, top at size 'D'          =  4 """
 
 import re,lib
-
-the = lib.OBJ(**{m[1]:lib.coerce(m[2]) # parse settings from __doc__
-              for m in re.finditer(r"--(\w+)[^=]*=\s*(\S+)",__doc__)})
-#the._help = __doc__
+the = lib.settings(__doc__) 
+the._help = __doc__

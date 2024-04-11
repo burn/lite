@@ -1,2 +1,2 @@
 
--include ../Makefile
+-include ../../etc/Makefile

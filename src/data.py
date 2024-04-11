@@ -24,7 +24,7 @@ class DATA: # Hold rows, summarized in column headers
     if   self.cols:
          self.rows += [row]
          [c.add(row[c.column]) for c in self.cols if row[c.column] != "?"] # Avoid 'dont know'   
-    else self.headers(names2columns(row))
+    else: self.headers(names2columns(row))
 
   def headers(self,cols): # |\circled{3}|  
     [self._header(col, col.txt[0], col.txt[-1]) for col in cols]
@@ -52,5 +52,7 @@ class DATA: # Hold rows, summarized in column headers
 
   def like(self,row,nall,nh,m=1,k=2): # return log likelihood of row is in self  |\circled{8}| 
     prior = (len(self.rows) + k) / (nall + k*nh)
-    tmp   = [col.like(row[col.colulmn], m, prior)  for col in self.x] |\circled{7} |
-    return sum(math.log(x) for x in tmp + [prior]) |\circled{9}|
+    tmp   = [col.like(row[col.colulmn], m, prior)  for col in self.x] #|\circled{7} |
+    return sum(math.log(x) for x in tmp + [prior]) #|\circled{9}|
+  
+  from  data_sway import near,faraway,half,sway
