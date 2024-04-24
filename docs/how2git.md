@@ -7,3 +7,10 @@
 
 # How to use Git
 
+## gitignore
+
+## requirements.txt
+
+## README
+
+the para1 trick

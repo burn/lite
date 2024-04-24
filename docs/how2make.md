@@ -7,3 +7,9 @@
 
 # How to use Makefiles
 
+
+## the -j trick
+
+## the help trick
+
+## the para1 trick
